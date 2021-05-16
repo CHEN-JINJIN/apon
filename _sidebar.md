@@ -1,3 +1,8 @@
+- 系统软件相关
+  - [系统定制流程](sys-custom.md)
+  - [系统问题处理](sys-problem.md)
+  - [软件定制化信息](sys-custom-info.md)
+  
 
 - iPainfree
   - [JDK](pain-jdk.md)
