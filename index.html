@@ -32,13 +32,14 @@
 
     search: 'auto',
         search: {
+            maxAge: 86400000,
             paths: [],
-            placeholder: ' 搜 索 ',
-            noData: '没有结果！',
+            placeholder: '🔍搜 索',
+            noData: 'sorry, 没有结果!',
             depth: 6,  // 搜索标题的最大层级, 1 - 6
-            hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
-            namespace: 'website-1',
         },//增加搜索框
+
+        
 
 
         plugins: [
@@ -61,21 +62,56 @@
 
     }
     </script>
- 
-  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
-  <script src="//unpkg.com/docsify-copy-code"></script>
-  <script src="//unpkg.com/docsify"></script>
-  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-xml.min.js"></script>
-  <!--script src="//cdn.jsdelivr.net/npm/docsify@4"></script!-->
-  <!-- Production -->
-<script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+
+    <!--script src="/lib/docsify.js"></script>
+    <script src="/lib/plugins/search.js"></script>
+    <script src="/lib/plugins/emoji.js"></script>
+    <script src="/lib/plugins/front-matter.js"></script -->
+
+    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-nginx.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-php.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-xml.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+
+     <!-- 回到顶部功能 -->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.goup({
+        trigger: 100,
+        bottomOffset: 52,
+        locationOffset: 25,
+        //title: 'TOP',
+        titleAsText: true
+      });
+    });
+  </script>
+
+  <!-- 谷歌分析 
+<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+-->
+
+  <!--使用 Gitter 实现一个 IM 即时通讯聊天室功能
+  <script>
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'enjoytoshare/community'
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/sidecar.v1.js" async defer></script>
+  -->
+
+
+
 
 <!-- Development -->
 <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

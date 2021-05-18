@@ -7,7 +7,7 @@
   - [JDK](pain-jdk.md)
   - [Tomcat](pain-tomcat.md)
   - [数据库](pain-sql.md)
-  - [实用工具](pain-tool.md)
+  - [实施工具](pain-tool.md)
   - [更新记录](pain-update.md)
   - [问题反馈](pain-bug.md)
 
