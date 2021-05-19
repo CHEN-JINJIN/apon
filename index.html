@@ -14,11 +14,11 @@
     window.$docsify = {
 		maxAge: 100,
 		name: '技术支持',//文档名
-		repo: 'https://www.wjx.cn/wxloj/datafullscreen.aspx?activity=113857274',//Github 挂件（大屏）
+		//repo: 'https://www.wjx.cn/wxloj/datafullscreen.aspx?activity=113857274',//Github 挂件（大屏）
     hideSidebar: false,
 		subMaxLevel: 2,//配置目录副标题级数
 		maxLevel: 3,  //配置最大支持渲染的标题层级
-		loadNavbar: false,//加载自定义导航栏 _navbar.md
+		loadNavbar: true,//加载自定义导航栏 _navbar.md
     loadSidebar: true,//加载自定义侧边栏 _sidebar.md
     autoHeader: true, //同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题。
     hideSidebar: false, //完全隐藏侧边栏
@@ -26,17 +26,17 @@
     onlyCover: true,  //只在访问主页时加载封面
     auto2top: true, //切换页面后是否自动跳转到页面顶部
     //logo: '/docsify_medial/logo.jpg',
-    mergeNavbar: true,  //小屏设备下合并导航栏到侧边栏
-    topMargin: 0,  //让你的内容页在滚动到指定的锚点时，距离页面顶部有一定空间
+    //mergeNavbar: true,  //小屏设备下合并导航栏到侧边栏
+    topMargin: 10,  //让你的内容页在滚动到指定的锚点时，距离页面顶部有一定空间
 
 
     search: 'auto',
-        search: {
-            maxAge: 86400000,
-            paths: [],
-            placeholder: '🔍搜 索',
-            noData: 'sorry, 没有结果!',
-            depth: 6,  // 搜索标题的最大层级, 1 - 6
+      search: {
+          maxAge: 86400000,
+          paths: 'auto',
+          placeholder: '🔍搜 索',
+          noData: 'sorry, 没有结果!',
+          depth: 6,  // 搜索标题的最大层级, 1 - 6
         },//增加搜索框
 
         
@@ -81,6 +81,7 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-xml.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 
      <!-- 回到顶部功能 -->
   <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
