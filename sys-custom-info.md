@@ -1,8 +1,8 @@
 # 系统软件定制化信息
 
-?>持续更新中... [如有错漏，欢迎指正~](./docsify_medial/chen.jpg")
+?>持续更新中... [如有错漏，欢迎指正~](chen.md)
 
-<img src="/docsify_medial/custom.png" />
+![Alt text](docsify_medial/custom.png "系统定制化信息")
 
 <!-- 
 | 医院名称     | 开发状态/排序 | 系统类别 | 定制历史       | 需求发起时间     | 预计开发周期        | 交付时间      | 备注                                   |
