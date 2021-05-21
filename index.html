@@ -32,6 +32,7 @@
     //logo: '/docsify_medial/logo.jpg',
     //mergeNavbar: true,  //小屏设备下合并导航栏到侧边栏
     topMargin: 10,  //让你的内容页在滚动到指定的锚点时，距离页面顶部有一定空间
+    disqus: 'shortname',
 
 
     search: 'auto',
@@ -62,6 +63,7 @@
     }
   ] //给每个页面的末尾加上 footer 
 
+
       
 
     }
@@ -86,6 +88,8 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-xml.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
 
      <!-- 回到顶部功能 -->
   <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
@@ -114,6 +118,19 @@
   </script>
   <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/sidecar.v1.js" async defer></script>
   -->
+
+  <!-- PDFObject.js is a required dependency of this plugin -->
+<!-- 支持 DOT 语言 -->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/viz.js"></script>
+  <!-- 支持 LaTex 语言 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+
+  <!-- 添加 PDF 页面展示功能 -->
+  <!-- PDFObject.js is a required dependency of this plugin -->
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/pdfobject.min.js"></script>
+  <!-- This is the source code of the pdf embed plugin -->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/docsify-pdf-embed.js"></script>
 
 
 

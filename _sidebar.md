@@ -1,3 +1,8 @@
+- Tools
+  - [好用tool](tool-share.md)
+  - [常用网站](README.md)
+  - [软件定制化信息](sys-custom-info.md)
+
 - 系统软件相关
   - [系统定制流程](sys-custom.md)
   - [系统问题处理](sys-problem.md)
