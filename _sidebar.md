@@ -1,5 +1,5 @@
 - Tools
-  - [好用tool](tool-share.md)
+  - [推荐神器](tool-share.md)
   - [常用网站](README.md)
   - [软件定制化信息](sys-custom-info.md)
 
