@@ -12,6 +12,27 @@
   <link rel="stylesheet" href="https://wugenqiang.js.org/src/css/iconfont.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/custom.css">
   <style>
+    /*手机隐藏项*/
+    @media (max-width:600px) {
+      pre {
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+        box-shadow: 0px 0px 20px 0px #f7f7f7 !important;
+      }
+
+      /*代码块复制按钮默认隐藏*/
+      .docsify-copy-code-button {
+        display: none;
+      }
+
+      .advertisement{
+        display: none;
+      }
+
+    }
+
      .advertisement {
       position: fixed;
       right: 20px;
@@ -41,7 +62,7 @@
 </head>
 <body>
   <div id="app">loading...</div>
-
+<div class="aside_container">
   <div class="advertisement">
     <div class="Tencent_code">
       <h4>联系我们</h4>
@@ -53,7 +74,7 @@
       <img src="docsify_medial\apongzh.jpg"  title="爱朋医疗" />
     </div>
   </div>
-
+</div>
 
     <script>
     window.$docsify = {
@@ -189,6 +210,9 @@
 
 <!-- 访问量统计 -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- 阅读时间和字数统计 -->
+<!-- <script src="//unpkg.com/docsify-count/dist/countable.js"></script> -->
 
 
 
