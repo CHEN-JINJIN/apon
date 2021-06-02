@@ -11,13 +11,54 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
   <link rel="stylesheet" href="https://wugenqiang.js.org/src/css/iconfont.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/custom.css">
+  <style>
+     .advertisement {
+      position: fixed;
+      right: 20px;
+      top: 100px;
+      width: 110px;
+      box-shadow: -1px 0 2px 0px #c5ebda;
+      padding: 10px;
+      z-index: 99;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .advertisement p,
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .advertisement .Tencent_code h4 {
+      font-size: 15px;
+      color: #25a46a;
+      margin-bottom: 10px;
+    }
+
+  </style>
+
 </head>
 <body>
   <div id="app">loading...</div>
+
+  <div class="advertisement">
+    <div class="Tencent_code">
+      <h4>联系我们</h4>
+      <p style="font-size: 13px;">◆联系电话</p>
+      <p style="font-size: 12px;">+86 513-80158888</p>
+      <p style="font-size: 13px;">◆传    真</p>
+      <p style="font-size: 12px;">+86 513-80157301</p>
+      <p style="font-size: 14px;">◆关注我们</p>
+      <img src="docsify_medial\apongzh.jpg"  title="爱朋医疗" />
+    </div>
+  </div>
+
+
     <script>
     window.$docsify = {
 		maxAge: 100,
-		name: '技术支持',//文档名
+		name: '越努力 越幸运',//文档名
 		//repo: 'https://www.wjx.cn/wxloj/datafullscreen.aspx?activity=113857274',//Github 挂件（大屏）
     hideSidebar: false,
 		subMaxLevel: 2,//配置目录副标题级数
