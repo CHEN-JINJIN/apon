@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
   <link rel="stylesheet" href="https://wugenqiang.js.org/src/css/iconfont.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/custom.css">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <style>
     /*手机隐藏项*/
     @media (max-width:600px) {
@@ -62,13 +66,14 @@
 </head>
 <body>
   <div id="app">loading...</div>
+
 <div class="aside_container">
   <div class="advertisement">
     <div class="Tencent_code">
       <h4>联系我们</h4>
       <p style="font-size: 13px;">◆联系电话</p>
       <p style="font-size: 12px;">+86 513-80158888</p>
-      <p style="font-size: 13px;">◆传    真</p>
+      <p style="font-size: 13px;">◆传&ensp;&ensp;&ensp;&ensp;真</p>
       <p style="font-size: 12px;">+86 513-80157301</p>
       <p style="font-size: 14px;">◆关注我们</p>
       <img src="docsify_medial\apongzh.jpg"  title="爱朋医疗" />
@@ -88,13 +93,13 @@
     loadSidebar: true,//加载自定义侧边栏 _sidebar.md
     autoHeader: true, //同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题。
     hideSidebar: false, //完全隐藏侧边栏
-		coverpage: false,//配置封面
+		coverpage: true,//配置封面
     onlyCover: true,  //只在访问主页时加载封面
     auto2top: true, //切换页面后是否自动跳转到页面顶部
     //logo: '/docsify_medial/logo.jpg',
     //mergeNavbar: true,  //小屏设备下合并导航栏到侧边栏
     topMargin: 10,  //让你的内容页在滚动到指定的锚点时，距离页面顶部有一定空间
-    disqus: 'shortname',
+    //disqus: 'shortname',
 
 
     search: 'auto',
@@ -114,8 +119,8 @@
       var footer = [
         '<hr/>',
         '<footer>',
-        '<span><a href="https://github.com/chenonce" target="_blank">chen</a> &copy;2021.</span>',
-        '<span>Proudly published with <a href="https://github.com/chenonce/apon" target="_blank">docsify</a>.</span>',
+        '<span>Copyright &copy; 2021.</span>',
+        '<span> Published by <a href="https://github.com/chenonce" target="_blank">chen</a> on<a href="https://github.com/chenonce/apon" target="_blank"> GetHub</a>.</span>',
         '</footer>'
       ].join('');
 
@@ -154,7 +159,7 @@
     <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script> -->
 
      <!-- 回到顶部功能 -->
   <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
