@@ -108,7 +108,7 @@
     .app-nav{
       position: fixed;
       margin: 0;
-      padding: 10px 0 10px 0;
+      padding: 20px 0 0 0;
       /* padding: 20px 0 10px 0;上、右、下、左 */
       /* width: calc(100% - 325px); */
       /* height: 55px; */
@@ -139,11 +139,11 @@
 <div class="aside_container">
   <div class="advertisement">
     <div class="Tencent_code">
-      <h4>联系我们</h4>
+      <h4 id="timeShow" style="font-size: 20px;"></h4>
       <p style="font-size: 13px;">◆联系电话</p>
-      <p style="font-size: 12px;">+86 513-80158888</p>
-      <p style="font-size: 13px;">◆传&ensp;&ensp;&ensp;&ensp;真</p>
-      <p style="font-size: 12px;">+86 513-80157301</p>
+      <p style="font-size: 12px;">+86 6666666</p>
+      <p style="font-size: 13px;">◆通&ensp;&ensp;&ensp;&ensp;知</p>
+      <p style="font-size: 12px;">通知标题（链接）</p>
       <p style="font-size: 14px;">◆关注我们</p>
       <img src="docsify_medial\apongzh.jpg"  title="爱朋医疗" />
     </div>
@@ -154,6 +154,7 @@
     window.$docsify = {
 		maxAge: 100,
 		name: '越努力 越幸运',//文档名
+    // nameLink: 'https://chenonce.github.io/apon',
 		//repo: 'https://www.wjx.cn/wxloj/datafullscreen.aspx?activity=113857274',//Github 挂件（大屏）
     hideSidebar: false,
 		subMaxLevel: 2,//配置目录副标题级数
@@ -244,6 +245,40 @@
       });
     });
   </script>
+
+  <!-- 时间显示 -->
+  <script type="text/javascript">
+    var t = null;
+
+    function time() {
+        dt = new Date();
+        var y = dt.getFullYear();
+        var M = dt.getMonth() + 1;
+        var d = dt.getDate();
+        var h = dt.getHours();
+        var m = dt.getMinutes();
+        var s = dt.getSeconds();
+        M=checkTime(M);
+        d=checkTime(d);
+       h=checkTime(h);
+        m=checkTime(m);
+        s=checkTime(s);
+        // document.getElementById("timeShow").innerHTML = "当前时间：" + y + "-" + M + "-" + d + " " + h + ":" + m + ":" + s;
+        document.getElementById("timeShow").innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout(time, 1000);
+    }
+
+    window.onload = function () {
+        time()
+    }
+    
+    function checkTime(i){
+    if(i<10){
+        i="0"+i;
+    }
+    return i;
+}
+</script>
 
   <!-- 谷歌分析 
 <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
